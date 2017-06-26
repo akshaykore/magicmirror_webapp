@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+    <!--Magic Mirror project by Akshay Kore
+    website: www.akor.in
+    blog: https://medium.com/@akshaykore
+    twitter: https://twitter.com/akshaykore
+    facebook: https://www.facebook.com/akshaykore
+    email: akshaykore[at]gmail.com-->
+<head>
+    <meta charset="utf-8">
+    
+    <title>Magic Mirror</title>
+    
+    <!--Meta information-->
+    <meta name="description" content="Magic Mirror by Akshay Kore">
+    <meta name="keywords" content="DIY, Raspberry Pi 3, Magic Mirror, Akshay Kore, Electronics, Hardware, AI, Artificial Intelligence">
+    <meta name="author" content="Akshay Kore">
+    
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700" rel="stylesheet">
+    
+    <!--UI CSS-->
+    <link href="css/ui.css" type="text/css" rel="stylesheet">
+    
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
+    <!--Speech to text API-->
+    <script src="js/annyang.min.js"></script>
+</head>
+    
+<body> 
+    
+    <!--this is the sound that plays when a question is answered--> 
+    <audio id="magic">
+        <source src="sounds/Magic_Chime.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!--Date and time divs--> 
+    <div id="generalinfo">
+        <div id="time"></div>
+        <div id="date"></div>
+        <div id="weather"></div>        
+    </div>
+    
+    <!--Greeting div. This is the one that says "hey sexy!"--> 
+    <div id="greeting"></div>    
+    
+    <!--NEVER DELETE THIS. Keep the order constant--> 
+    <div id="answers">
+        <div id="wiki">
+            <div id="wikititle"></div>
+            <div id="wikianswer"></div>
+            <div id="wikisource"></div>
+        </div>
+        <div id="mirror">
+            <div id="mirrorquestion"></div>
+            <div id="mirroranswer"></div>
+        </div>
+    
+    </div>
+    
+    <!--Information for user, keywords to use -->    
+    <div id="footerinfo">
+    Magic words : Wiki, Dodo, Hey yo!
+    </div>
+    
+    <!--NEVER DELETE THIS. Keep the order constant-->    
+    <script src="js/audio.js"></script>
+    <script src="js/clear.js"></script>
+    <script src="js/time.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/wiki.js"></script>
+    <script src="js/wolfram.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/voice.js"></script>    
+ 
+</body>
+</html>
+
+<!--Magic Mirror project by Akshay Kore
+    website: www.akor.in
+    blog: https://medium.com/@akshaykore
+    twitter: https://twitter.com/akshaykore
+    facebook: https://www.facebook.com/akshaykore
+    email: akshaykore[at]gmail.com-->
